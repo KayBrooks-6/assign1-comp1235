@@ -1,9 +1,51 @@
 /* CSS Styles for Assignment 1 */
 /* typefaces */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
 
 /* General page or misc */
 
+header,
+footer {
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  font-family: "Merriweather", serif;
+}
+
 /* Header / nav */
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+#home {
+  margin-right: auto;
+}
+
+nav {
+  height: 100px;
+  width: 960px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#nav-links li {
+  padding: 0 10px;
+}
 
 /* Course cards for flex */
 
