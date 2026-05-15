@@ -30,13 +30,27 @@ header {
 
 nav {
   height: 100px;
-  width: 960px;
+  /* width: 960px; */ <<<<<  width: 100%;
   box-sizing: border-box;
   border: 2px solid black;
   padding-left: 20px;
   padding-right: 20px;
 }
+/* #nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+} */
+#nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
+/* #nav-links li {
+  padding: 0 10px;
+} */
 #course-grid{
     max-width: 960px;
     display: grid;
@@ -49,15 +63,9 @@ nav {
     grid-row-gap: 15px;
     grid-column-gap: 10px;
 }
-
-#nav-links {
-  list-style-type: none;
-  display: flex;
-  justify-content: flex-end;
-}
-
-#nav-links li {
-  padding: 0 10px;
+#page_title{
+    grid-column: 1/4;
+  
 }
 
 /* Course cards for flex */
