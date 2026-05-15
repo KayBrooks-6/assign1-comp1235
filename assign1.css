@@ -14,7 +14,7 @@ footer {
 main {
   font-family: "Merriweather", serif;
 }
-/* Is the border supposed to fit-content? Not sure*/
+/* Is the border supposed to fit-content? Not sure*/ /*Line 88 is margin auto and line 94 margin-bottom. Can't be both*/
 /* Added #nav-links to line 78.  Line 119 and line 120*/
 
 /* Note to Rachel: maybe we colour each item as below? if nah, then just delete it. Or you can change it if you want. */
