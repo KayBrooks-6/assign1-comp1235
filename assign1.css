@@ -37,6 +37,19 @@ nav {
   padding-right: 20px;
 }
 
+#course-grid{
+    max-width: 960px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px
+    grid-auto-rows: auto;
+    grid-row-gap: 15px;
+    grid-column-gap: 10px;
+}
+
 #nav-links {
   list-style-type: none;
   display: flex;
