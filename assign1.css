@@ -15,7 +15,7 @@ main {
   font-family: "Merriweather", serif;
 }
 
-/* Note to Rachel: maybe we colour each item as below? if nah, then just delete it. */
+/* Note to Rachel: maybe we colour each item as below? if nah, then just delete it. Or you can change it if you want. */
 main > article {
   background: #f8f7f8;
   border-radius: 1em;
@@ -37,7 +37,7 @@ body {
   background: #cedfe9;
 }
 
-/* Header / nav */
+/* Header*/
 header {
   display: flex;
   justify-content: center;
@@ -49,6 +49,7 @@ header {
   margin-right: auto;
 }
 
+/* Nav rules. */
 nav {
   height: 100px;
   width: 100%;
@@ -73,6 +74,7 @@ nav {
   border-radius: 0.5em;
 }
 
+/* Grid rules */
 #course-grid {
   max-width: 960px;
   display: grid;
@@ -84,6 +86,7 @@ nav {
   grid-auto-rows: auto;
   grid-row-gap: 15px;
   grid-column-gap: 10px;
+  margin-bottom: 1em;
 }
 
 .course_item {
@@ -98,6 +101,7 @@ nav {
   grid-column: 1/4;
 }
 
+/* Footer rules */
 footer {
   /*display: inline-block;*/
   /*justify-content: center;*/
@@ -139,3 +143,14 @@ footer p {
 }
 
 /* media queries */
+@media (max-width: 768px) {
+  #course-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  #course-grid {
+    grid-template-columns: 1fr;
+  }
+}
