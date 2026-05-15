@@ -15,6 +15,13 @@ main {
   font-family: "Merriweather", serif;
 }
 
+.course_image {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 /* Header / nav */
 
 header {
@@ -30,42 +37,45 @@ header {
 
 nav {
   height: 100px;
-  /* width: 960px; */ <<<<<  width: 100%;
+  /* width: 100%; */
   box-sizing: border-box;
   border: 2px solid black;
   padding-left: 20px;
   padding-right: 20px;
 }
+
 /* #nav-links {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
 } */
+
 #nav-links {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 /* #nav-links li {
   padding: 0 10px;
 } */
-#course-grid{
-    max-width: 960px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px
-    grid-auto-rows: auto;
-    grid-row-gap: 15px;
-    grid-column-gap: 10px;
+
+#course-grid {
+  max-width: 960px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px;
+  grid-auto-rows: auto;
+  grid-row-gap: 15px;
+  grid-column-gap: 10px;
 }
-#page_title{
-    grid-column: 1/4;
-  
+
+#page_title {
+  grid-column: 1/4;
 }
 
 /* Course cards for flex */

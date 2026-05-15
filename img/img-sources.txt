@@ -1,0 +1,11 @@
+Image sources:
+
+KeyCDN. (2022, June 2). What is full stack development? KeyCDN Support. https://www.keycdn.com/support/full-stack-development
+
+BMC Software. (n.d.). DBMS (database management systems). https://www.bmc.com/blogs/dbms-database-management-systems/
+
+QuickStart Learning. (n.d.). 10 applications of object-oriented programming. https://www.quickstart.com/blog/software-engineering/10-applications-of-object-oriented-programming/
+
+ProProfs Quiz Maker. (n.d.). Programming and software development quiz. ProProfs Quiz. https://www.proprofs.com/quiz-school/story.php?title=mtq1mtq2oqtx8h
+
+Illustoon. (n.d.). Programmer illustration. https://illustoon.com/?id=5883
