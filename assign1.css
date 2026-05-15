@@ -15,7 +15,7 @@ main {
   font-family: "Merriweather", serif;
 }
 /* Is the border supposed to fit-content? Not sure*/
-/* Added #nav-links to line 78.*/
+/* Added #nav-links to line 78.  Line 119 and line 120*/
 
 /* Note to Rachel: maybe we colour each item as below? if nah, then just delete it. Or you can change it if you want. */
 main > article {
@@ -116,9 +116,9 @@ footer {
   align-items: center;
   height: fit-content;
   width: auto;
-  border: #0000c3 3px solid;
+  border: black 2px solid;
   box-sizing: border-box;
-  margin: 0 70px 0 70px;
+  margin: 20px 70px 0 70px;
   padding: 0;
   border-radius: 1em;
 }
