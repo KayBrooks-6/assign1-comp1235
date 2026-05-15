@@ -77,6 +77,24 @@ nav {
 #page_title {
   grid-column: 1/4;
 }
+footer p{
+      display: flex;
+      justify-content: flex-start;
+      padding: 20px;
+      align-items: center;
+}
+#footer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+#footer-items>li:first-child {
+    order: 1;
+}
+#footer-items>li:last-child {
+    order: -1;
+}
 
 /* Course cards for flex */
 
