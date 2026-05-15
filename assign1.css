@@ -15,10 +15,10 @@ main {
   font-family: "Merriweather", serif;
 }
 /* Is the border supposed to fit-content? Not sure*/ /*Line 88 is margin auto and line 94 margin-bottom. Can't be both*/
-/* Added #nav-links to line 78.  Line 119 and line 120*/
+/* Added #nav-links to line 78.  Line 119 and line 120*/ /*Line 136-156 adjusted. Links are spaced out*/
 
-/* Note to Rachel: maybe we colour each item as below? if nah, then just delete it. Or you can change it if you want. */
-main > article {
+/* We can colour as below */ 
+> article {
   background: #f8f7f8;
   border-radius: 1em;
 }
@@ -118,6 +118,7 @@ footer {
   width: auto;
   border: black 2px solid;
   box-sizing: border-box;
+  background: #436ab3;
   margin: 20px 70px 0 70px;
   padding: 0;
   border-radius: 1em;
@@ -133,20 +134,22 @@ footer p {
   /*align-items: center;*/
 }
 #footer-items {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    width: 100%;
 }
 #footer-items > li:first-child {
-  order: 1;
-  margin-left: 20px;
-  padding-right: 20px;
+    order: 0;
+    margin-right: auto ;
+    margin-left: auto;
 }
 #footer-items > li:last-child {
-  order: 0;
+    order: 1;
+    margin-left: 20px;
+    padding-right: 20px;
 }
-
 /* media queries */
 @media (max-width: 768px) {
   #course-grid {
