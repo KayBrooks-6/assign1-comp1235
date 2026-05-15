@@ -14,6 +14,8 @@ footer {
 main {
   font-family: "Merriweather", serif;
 }
+/* Is the border supposed to fit-content? Not sure*/
+/* Added #nav-links to line 78.*/
 
 /* Note to Rachel: maybe we colour each item as below? if nah, then just delete it. */
 main > article {
@@ -71,6 +73,9 @@ nav {
   background: #c298b7;
   padding: 0.25em;
   border-radius: 0.5em;
+}
+#nav-links>li:last-child {
+    margin-right: 40px;
 }
 
 #course-grid {
