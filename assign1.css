@@ -4,17 +4,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
 
-
 /* added rule to footer. #course-grid fixed margin rule to margin: 0 auto 1em; */
 
-
-/* General page or misc */
-
-header,
-footer {
-  font-family: "Montserrat", sans-serif;
-}
-
+/* Main element*/
 main {
   font-family: "Merriweather", serif;
 }
@@ -24,32 +16,22 @@ main > article {
   border-radius: 1em;
 }
 
-.course_image {
-  width: 200px;
-  height: 12em;
-  display: block;
-  margin: 0 auto;
-  border-radius: 1em;
-}
-
-.course_number {
-  text-align: center;
-}
-
+/* Body */
 body {
   background: #cedfe9;
 }
 
 /* Header*/
+header,
+footer {
+  font-family: "Montserrat", sans-serif;
+}
+
 header {
   display: flex;
   justify-content: center;
   width: 100%;
   align-items: center;
-}
-
-#home {
-  margin-right: auto;
 }
 
 /* Nav rules. */
@@ -59,7 +41,7 @@ nav {
   box-sizing: border-box;
   border: 2px solid black;
   padding: 20px 0 20px 0;
-  margin: 20px 70px 0 70px;
+  margin: 20px auto 0;
   border-radius: 1em;
   background: #436ab3;
 }
@@ -67,7 +49,7 @@ nav {
 #nav-links {
   list-style-type: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 20px;
 }
 
@@ -80,9 +62,16 @@ nav {
   margin-right: 40px;
 }
 
-/* Grid rules */
+/* This was overwriting anything in # nav-links li, as it seems the assginment
+wanted the links to be on the left or right side. */
+
+/* #home {
+  margin-right: auto;
+} */
+
+/* Grid rules for the courses and cards inside them */
 #course-grid {
-  max-width: 960px;
+  max-width: 100%;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -93,6 +82,18 @@ nav {
   grid-row-gap: 15px;
   grid-column-gap: 10px;
   /* margin-bottom: 1em; */
+}
+
+.course_image {
+  width: 200px;
+  height: 12em;
+  display: block;
+  margin: 0 auto;
+  border-radius: 1em;
+}
+
+.course_number {
+  text-align: center;
 }
 
 .course_item {
@@ -117,7 +118,7 @@ footer {
   border: black 2px solid;
   box-sizing: border-box;
   background: #436ab3;
-  margin: 20px 70px 0 70px;
+  margin: 20px auto 0;
   padding: 0;
   border-radius: 1em;
 }
@@ -128,13 +129,14 @@ footer {
   padding-left: 20px;
 } */
 footer p {
-    order: -1;
-    margin-right: auto;
-    /*padding-left: 20px;*/
-    background: #c298b7;
-    padding: 0.25em 0 0.25em  20px;
-    border-radius: 0.5em;
+  order: -1;
+  margin-left: 20px;
+  margin-right: auto;
+  background: #c298b7;
+  padding: 0.25em 0.5em;
+  border-radius: 0.5em;
 }
+
 #footer-items {
   display: flex;
   flex-direction: row;
@@ -153,10 +155,11 @@ footer p {
   padding-right: 20px;
 }
 #footer-items > li a {
-    background: #c298b7;
-    padding: 0.25em 0 0.25em  0;
-    border-radius: 0.5em;
+  background: #c298b7;
+  padding: 0.25em 0 0.25em 0;
+  border-radius: 0.5em;
 }
+
 /* media queries */
 @media (max-width: 768px) {
   #course-grid {
