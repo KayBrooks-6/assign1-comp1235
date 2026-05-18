@@ -4,11 +4,14 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
 
+/*change of grid #courses based off assignment instructions*/
+
 /* added rule to footer. #course-grid fixed margin rule to margin: 0 auto 1em; */
 
 /* Main element*/
 main {
   font-family: "Merriweather", serif;
+  max-width: 100%;
 }
 
 main > article {
@@ -65,12 +68,52 @@ nav {
 /* This was overwriting anything in # nav-links li, as it seems the assginment
 wanted the links to be on the left or right side. */
 
-/* #home {
+ #home {
   margin-right: auto;
-} */
+} 
+
+/* Grid rules for the courses and cards inside them */
+ #home {
+  margin-right: auto;
+}
 
 /* Grid rules for the courses and cards inside them */
 #course-grid {
+    max-width: 960px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-auto-rows: 100px auto;
+    grid-row-gap: 15px;
+    grid-column-gap: 10px;
+}
+
+.course_image {
+     grid-area: image;
+
+}
+
+.course_number {
+    grid-area: number;
+}
+.course_title {
+    grid-area: title;
+}
+.course_description {
+    grid-area: description;
+}
+
+.course_item {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 4fr;
+    grid-template-areas: "image number"
+         "image title"
+          "image description";
+}
+/* #course-grid {
   max-width: 100%;
   display: grid;
   justify-content: center;
@@ -81,7 +124,7 @@ wanted the links to be on the left or right side. */
   grid-auto-rows: auto;
   grid-row-gap: 15px;
   grid-column-gap: 10px;
-  /* margin-bottom: 1em; */
+
 }
 
 .course_image {
@@ -106,7 +149,7 @@ wanted the links to be on the left or right side. */
 
 #page_title {
   grid-column: 1/4;
-}
+} */
 
 /* Footer rules */
 footer {
@@ -114,7 +157,8 @@ footer {
   justify-content: center;
   align-items: center;
   height: fit-content;
-  width: auto;
+  /* width: auto; */
+  max-width: 100%;
   border: black 2px solid;
   box-sizing: border-box;
   background: #436ab3;
@@ -123,11 +167,6 @@ footer {
   border-radius: 1em;
 }
 
-/* footer p {
-  order: -1;
-  margin-right: auto;
-  padding-left: 20px;
-} */
 footer p {
   order: -1;
   margin-left: 20px;
