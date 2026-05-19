@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
 
 
-/* added rule to footer. #course-grid fixed margin rule to margin: 0 auto 1em; */
+/* #course-grid fixed */
 
 
 /* General page or misc */
@@ -82,6 +82,42 @@ nav {
 
 /* Grid rules */
 #course-grid {
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 15px 10px;
+    box-sizing: border-box;
+    margin: 0 50px 0 50px;
+}
+
+.course_image {
+     grid-area: image;
+    max-width: 100%;
+
+}
+
+.course_number {
+    grid-area: number;
+}
+.course_title {
+    grid-area: title;
+}
+.course_description {
+    grid-area: description;
+}
+
+.course_item {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 4fr;
+    grid-template-areas: "image number"
+         "image title"
+          "image description";
+}
+/* #course-grid {
   max-width: 960px;
   display: grid;
   justify-content: center;
@@ -101,7 +137,7 @@ nav {
 
 .course_description {
   margin: 0.5em;
-}
+} */
 
 #page_title {
   grid-column: 1/4;
