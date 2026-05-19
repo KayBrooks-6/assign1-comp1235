@@ -107,10 +107,10 @@ nav {
 .course_description {
     grid-area: description;
 }
-
 .course_item {
     display: grid;
-    justify-content: center;
+    justify-content: flex-start;
+    align-self: flex-start;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 2fr 4fr;
     grid-template-areas: "image number"
@@ -118,7 +118,7 @@ nav {
           "image description";
     width: 150px;
     height: 300px;
-}
+    margin-right: auto;
 /* #course-grid {
   max-width: 960px;
   display: grid;
