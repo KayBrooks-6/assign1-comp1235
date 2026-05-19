@@ -89,7 +89,7 @@ nav {
     grid-auto-rows: minmax(100px, auto);
     gap: 15px 10px;
     box-sizing: border-box;
-    margin: 0 50px 0 50px;
+    margin: 0 auto;
 }
 
 .course_image {
@@ -116,6 +116,8 @@ nav {
     grid-template-areas: "image number"
          "image title"
           "image description";
+    width: 150px;
+    height: 300px;
 }
 /* #course-grid {
   max-width: 960px;
@@ -130,14 +132,14 @@ nav {
   grid-column-gap: 10px;
   /* margin-bottom: 1em; */
 }
-
+/* 
 .course_item {
   min-height: 22em;
 }
 
 .course_description {
   margin: 0.5em;
-} */
+} */ */
 
 #page_title {
   grid-column: 1/4;
