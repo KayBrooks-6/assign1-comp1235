@@ -22,15 +22,14 @@ header {
   align-items: center;
 }
 nav {
-  height: 100px;
-  max-width: 960px;
-  width: 100%;
-  box-sizing: border-box;
-  border: 2px solid black;
-  padding: 20px 0;
-  margin: 20px auto 0;
-  border-radius: 1em;
-  background: #436ab3;
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 20px 0;
+    margin: 20px 40px;
+    border-radius: 1em;
+    background: #436ab3;
 }
 #nav-links {
   list-style-type: none;
@@ -61,6 +60,7 @@ nav {
   max-width: 960px;
   width: 100%;
   margin: 0 auto 1em;
+  padding-right: 300px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px auto;
   row-gap: 15px;
@@ -68,7 +68,7 @@ nav {
 }
 #page_title {
   grid-column: 1 / 4;
-  text-align: center;
+  text-align: left;
 }
 main > article {
   background: #f8f7f8;
@@ -80,11 +80,16 @@ main > article {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 1fr 4fr;
-  min-height: 22em;
+  min-height: 300px;
+  grid-template-areas:
+            "image number"
+            "image title"
+            "image description";
 }
 
 .course_image {
   grid-row: span 3;
+  grid-area: image;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -93,15 +98,18 @@ main > article {
 }
 
 .course_number {
+  grid-area: number;
   margin: 0.5em 0.5em 0 0.5em;
   font-size: 1rem;
 }
 .course_title {
+  grid-area: title;
   margin: 0 0.5em;
   font-size: 0.9em;
   color: #555;
 }
 .course_description {
+  grid-area: description;
   margin: 0.5em;
   font-size: 0.95em;
   line-height: 1.4;
@@ -113,12 +121,11 @@ footer {
   justify-content: center;
   align-items: center;
   height: fit-content;
-  max-width: 960px;
-  width: 100%;
+  max-width: 100%;
   border: black 2px solid;
   box-sizing: border-box;
   background: #436ab3;
-  margin: 20px auto 0;
+  margin: 20px 40px 20px 40px;
   padding: 0;
   border-radius: 1em;
 }
